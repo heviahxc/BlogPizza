@@ -4,9 +4,7 @@
     --white: #fff;
     --black: #000;
 }
-
 /*Globals*/
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -146,7 +144,7 @@ img{
 }
 
 .entry {
-    border-bottom: 1px solid var(--gris);
+    border-bottom: 1px solid var(--black);
     margin-bottom: 2rem;
 }
 .entry:last-of-type {
@@ -186,23 +184,92 @@ img{
     list-style: none;
 }
 
-.widget-course {
+.widget-course,
+.course {
     border-bottom: 1px solid var(--black);
     margin-bottom: 2rem;
 }
-.widget-course:last-of-type {
+.widget-course:last-of-type,
+.course:last-of-type {
     border: none;
     margin-bottom: 0;
 }
-.widget-course_label {
+.widget-course_label,
+.course_label {
     font-family: var(--mainFont);
     font-weight: bold;
 }
-.widget-course_info {
+.widget-course_info,
+.course_info {
     font-weight: normal;
 }
 .widget-course_label,
-.widget-course_info {
+.widget-course_info ,
+.course_label,
+.course_info{
     font-size: 2rem;
+}
+
+.footer{
+    background-color: var(--colorPrimary);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    border-radius: 1%;
+}
+
+.bar{
+    padding-top: 3rem;
+}
+
+/** Sobre Nosotros **/
+@media (min-width: 768px) {
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/** Cursos **/
+
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+/** Contacto **/
+.contact-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.textfield {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.textfield-label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.textfield-field {
+    flex: 1;
+    border: 1px solid var(--black);
+}
+.textfield-field--textarea {
+    height: 20rem;
+    width: 100%;
 }
 

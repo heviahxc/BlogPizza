@@ -29,6 +29,7 @@
             </div>
         </div>
         <div class="header_text">
+            
             <div class="text_main">
             <h2 class="no-margin">Blog de Pizza con consejos y cursos</h2>
             <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
@@ -37,32 +38,25 @@
     </header>
 
     <main class="container">
-        <h3 class="text-center">Sobre Nosotros</h3>
-
-        <div class="about-us">
-
-            <div class="about-us-image">
-                <img src="img/nosotros.jpg" alt="image us">
+        <h3 class="text-center">Contacto</h3>
+        <div class="contact-bg"></div>
+        <form class="form">
+            <div class="textfield">
+                <label class="textfield-label" for="nombre">Nombre</label>
+                <input class="textfield-field" type="text" placeholder="Tu nombre" id="nombre">
             </div>
-
-            <div class="about-us-text">
-                    <p>
-                        Consectetur exercitation cillum deserunt Lorem do consequat. 
-                        Consequat in pariatur laborum dolore nisi consectetur ut officia. 
-                        Consequat sint id proident occaecat exercitation ex. 
-                        Lorem cupidatat aute voluptate officia excepteur proident exercitation consequat. 
-                        Qui cupidatat in ipsum nostrud amet dolor fugiat. Amet ea nostrud sunt sint.
-                    </p>
-                    <p>
-                        Consectetur ad et excepteur cillum duis anim proident enim dolore eiusmod enim.
-                         Officia ipsum mollit pariatur irure irure. 
-                         empor ex cupidatat exercitation est ullamco consectetur quis esse. 
-                         Dolore Lorem eu magna culpa commodo laborum et quis officia officia magna aliqua officia dolor. 
-                         Irure do nostrud reprehenderit aliquip reprehenderit reprehenderit eu officia cillum eu ut cupidatat.
-                    </p>
+            <div class="textfield">
+                <label class="textfield-label" for="email">E-mail</label>
+                <input class="textfield-field" type="email" placeholder="Tu email" id="email">
             </div>
-
-        </div>
+            <div class="textfield">
+                <label class="textfield-label" for="mensaje">Mensaje</label>
+                <textarea class="textfield-field--textarea" name="" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <div class="textfield">
+                <input type="submit" value="Enviar" class="button button--primary">
+            </div>
+        </form>
 
     </main>
 
